@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Canción Especial ❤️</title>
+    <style>
+        /* Estética romántica y suave */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #fff0f3; /* Rosa pastel muy claro */
+            font-family: 'Apple Chancery', cursive, 'Georgia', serif;
+            color: #5d2a42;
+            overflow: hidden;
+        }
+
+        /* Fondo con corazones flotantes (decorativo) */
+        .background-hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url('https://www.transparenttextures.com/patterns/hearts.png');
+            opacity: 0.3;
+        }
+
+        .main-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 15px 50px rgba(255, 105, 180, 0.2);
+            text-align: center;
+            max-width: 650px;
+            width: 90%;
+            border: 2px solid #ffb3c1;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+            color: #c9184a;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            color: #a44a5f;
+        }
+
+        /* Contenedor responsivo para el video de YouTube */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            border: 5px solid #ffccd5;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .footer-text {
+            margin-top: 25px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #ff4d6d;
+        }
+
+        .heart-icon {
+            display: inline-block;
+            animation: pulse 1.5s infinite;
+            font-size: 25px;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-hearts"></div>
+
+    <div class="main-card">
+        <h1>Nuestra Historia en una Canción</h1>
+        <p>Sorpresita que llega un poquis tarde <span class="heart-icon">🌹</span></p>
+
+        <!-- Aquí está tu video de YouTube integrado -->
+        <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ukjPsrsWVa0?si=-OwpsrsOMU1puBTC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="footer-text">
+            Te amo hoy, mañana y siempre <span class="heart-icon">❤️</span>
+        </div>
+    </div>
+
+</body>
+</html>
